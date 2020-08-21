@@ -137,7 +137,8 @@ class Puma560(SerialLink):
         super(Puma560, self).__init__(
             L,
             name="Puma 560",
-            manufacturer="Unimation")
+            manufacturer="Unimation",
+            stl_files="./roboticstoolbox/models/meshes/UNIMATE/puma560/")
 
     def plot(self, jointconfig, unit='rad'):
         """
